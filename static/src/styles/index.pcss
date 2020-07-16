@@ -1,0 +1,37 @@
+@import "_variables.pcss";
+@import "file_1.pcss";
+@import "inner_style_folder/file_2.pcss";
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+	transition: .6s;
+	font-family: Roboto-Regular;
+}
+
+.foo {
+	width: 240px;
+}
+
+@media screen and (min-width: 768px) {
+	.foo {
+		width: 576px;
+	}
+}
+
+.foo {
+	height: 100px;
+}
+
+.bar {
+	width: 160px;
+}
+
+@media screen and (min-width: 768px) {
+	.bar {
+		width: 384px;
+	}
+}
